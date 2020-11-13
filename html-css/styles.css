@@ -12,3 +12,104 @@ the font is called 'nunito' and can be found on google fonts
 ***you can use it if you'd like or you can choose your own***
 
 */
+
+* {
+  margin: 0;
+}
+
+body {
+  display: flex;
+  padding-top: 10vh;
+}
+
+header {
+  background-color: black;
+  height: 10vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-top {
+  display: flex;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+}
+
+h1 {
+  color: #2aabe2;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+h3 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+nav {
+  width: 40vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.menu-item {
+  color: white;
+  display: flex;
+  align-items: space-between;
+}
+
+.main-content {
+  height: 80vh;
+  width: 70vw;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.p-content {
+  margin: 80px;
+}
+
+.img-holder {
+  height: 100px;
+  width: 300px;
+}
+
+.side-bar {
+  height: 500px;
+}
+
+.profile {
+  height: 250px;
+  width: 200px;
+  box-shadow: 1px 1px 9px 1px rgba(140, 108, 102, 0.41);
+  text-align: center;
+  margin: 10px;
+}
+
+#profile-img {
+  height: 200px;
+  width: 175px;
+}
+
+.popular-articles {
+  height: 300px;
+  width: 200px;
+  box-shadow: 1px 1px 9px 1px rgba(140, 108, 102, 0.41);
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

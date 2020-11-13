@@ -10,6 +10,8 @@
 
 //CODE HERE
 
+myArr = [4, "abc", ["cat", "dog", "bird"], 77];
+
 
 ////////////////////PROBLEM 2////////////////////
 /*
@@ -22,6 +24,7 @@ const nestedLetters = ['m', 'g', 'e', 'q', 'h', ['n', 'b', ['v', 'z', 'y', 'r']]
 
 //CODE HERE
 
+const foundZ = nestedLetters[5][2][1];
 
 ////////////////////PROBLEM 3////////////////////
 /*
@@ -38,14 +41,17 @@ const desert = ['rattlesnake', 'coyote']
 
 //CODE HERE
 
+const animals = [...forest, ...ocean, ...savannah, ...desert]
+
 
 /*
     Now use the spread operator to make a copy of your animals array.
-    Call the new array 'animalsCopy' and add 'elephant' onto the end of the array.
+    Call the new array 'animalsCopy' and add 'elephant' onto the end of the array.????
 */
 
 //CODE HERE
 
+let animalsCopy = [...animals]
 
 ////////////////////PROBLEM 4////////////////////
 /*
@@ -57,6 +63,7 @@ const desert = ['rattlesnake', 'coyote']
 
 //CODE HERE
 
+let compareNums = (num1, num2) => num1 > num2 ? num1 : num2;
   
 ////////////////////PROBLEM 5////////////////////
 /*
@@ -67,7 +74,9 @@ const desert = ['rattlesnake', 'coyote']
     we would expect the function to return 'Sharknado is the best movie ever!'
 */
 
-//CODE HERE
+//CODE HERE ????
+
+let bestMovie = (title) => `${title} is the best movie ever!`;
   
   
 ////////////////////PROBLEM 6////////////////////
@@ -77,6 +86,7 @@ const desert = ['rattlesnake', 'coyote']
 
 //CODE HERE
   
+let jsNinja = () => "I am a JavaScript ninja!";
 
 ////////////////////PROBLEM 7////////////////////
 
@@ -98,6 +108,7 @@ const desert = ['rattlesnake', 'coyote']
 
 //CODE HERE
   
+delete gameInfo.rating
 
 ////////////////////PROBLEM 8////////////////////
 
@@ -115,10 +126,14 @@ const desert = ['rattlesnake', 'coyote']
   
 /*
     You only like even numbers, so get rid of the other shapes by
-    looping over the shapes object and deleting any property whose value is odd number.
+    looping over the shapes object and deleting any property whose value is odd number.???
 */
 
 //CODE HERE
+
+// const evenNums = shapes.filter(el => {
+//     return el % 2 === 0;
+// }
   
   
 ////////////////////PROBLEM 9////////////////////
@@ -160,8 +175,13 @@ const classes = [
     all online classes with no homework.
 */
 
-//CODE HERE
+//CODE HERE ?????
 
+// function noHomework = (){
+//     for(let i = 0; i < classes.length, i++){
+//         for(key in 
+//     }
+// }
   
 ////////////////////PROBLEM 10////////////////////
 /*
@@ -174,9 +194,17 @@ const classes = [
 //DO NOT EDIT CODE BELOW  
 const lettersToPair = ['e', 'k', 's', 'a', 'e', 's', 'a', 'n', 'k', 'n']  
 let pairsArray = []
-//DO NOT EDIT CODE ABOVE
+//DO NOT EDIT CODE ABOVE ????
 
 //CODE HERE
+
+// function noHomework = (){
+//     for(let i = 0; i < lettersToPair.length, i++){
+//         if([i] === [i]{
+//             for(let j = 0; j < )
+//     }
+//     return pairsArray
+// }
 
     
 
@@ -195,6 +223,12 @@ let pairsArray = []
 
 //CODE HERE
 
+function Dog(name, age, breed, tricks){
+    this.name = name
+    this.age = age
+    this.breed = breed
+    this.tricks = tricks
+}
 
 /*
     Invoke your dog constructor passing in 'Fido' for the name, 3 for the age, 
@@ -203,6 +237,8 @@ let pairsArray = []
 */
 
 //CODE HERE
+
+let fido = new Dog("Fido", 3, "Jack Russell", ["sit", "shake"])
   
 
 ////////////////////PROBLEM 12////////////////////
@@ -214,6 +250,11 @@ let pairsArray = []
 
 //CODE HERE
 
+// function bark(){
+//     `${this.name} says bark!"
+// }
+
+
 
 /*
     Invoke the call method on bark, passing in fido as the context
@@ -222,7 +263,8 @@ let pairsArray = []
 
 //CODE HERE
   
-  
+bark.call(this.name, "fido")
+
 ////////////////////PROBLEM 13////////////////////
 /*
     Write a function called 'teachTrick' that will take in one parameter, trick, 
